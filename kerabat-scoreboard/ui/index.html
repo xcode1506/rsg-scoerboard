@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedM Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7b5d9566f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="scoreboard" class="hidden">
+        <!-- Header Line -->
+        <div class="header-line">
+            <div class="total-players">
+                <i class="fas fa-users"></i>
+                <span id="totalPlayers">0</span>
+                <span class="label">ONLINE</span>
+            </div>
+            
+            <!-- Tambahkan server name dan ID player di tengah -->
+            <div class="server-info">
+                <div class="server-name" id="serverName">KERABAT COUNTY</div>
+                <div class="player-id">ID: <span id="playerId">0</span></div>
+            </div>
+            
+            <div class="server-time" id="timestamp">--:--:--</div>
+        </div>
+
+        <!-- Jobs Row -->
+        <div class="jobs-row">
+            <div class="job-item medic">
+                <i class="fas fa-medkit"></i>
+                <div class="job-info">
+                    <span class="job-count" id="medics">0</span>
+                    <span class="job-name">MEDICS</span>
+                </div>
+            </div>
+
+            <div class="job-item lawman">
+                <i class="fas fa-sheriff"></i>
+                <div class="job-info">
+                    <span class="job-count" id="lawmen">0</span>
+                    <span class="job-name">LAWMEN</span>
+                </div>
+            </div>
+
+            <div class="job-item wagon">
+                <i class="fas fa-wagon-covered"></i>
+                <div class="job-info">
+                    <span class="job-count" id="wagons">0</span>
+                    <span class="job-name">WAGONS</span>
+                </div>
+            </div>
+
+            <div class="job-item saloon">
+                <i class="fas fa-beer"></i>
+                <div class="job-info">
+                    <span class="job-count" id="saloons">0</span>
+                    <span class="job-name">SALOON</span>
+                </div>
+            </div>
+
+            <div class="job-item ranch">
+                <i class="fas fa-horse"></i>
+                <div class="job-info">
+                    <span class="job-count" id="ranches">0</span>
+                    <span class="job-name">RANCH</span>
+                </div>
+            </div>
+
+            <div class="job-item own-job">
+                <i class="fas fa-user"></i>
+                <div class="job-info">
+                    <span class="job-count" id="ownJobCount">1</span>
+                    <span class="job-name" id="ownJobName">YOU</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
